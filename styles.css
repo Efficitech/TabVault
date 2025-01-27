@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  background: linear-gradient(135deg, #e4e8f0, #f9fafc);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #1a73e8;
+  margin: 20px 0;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Create Group Section */
+#createGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+#groupName {
+  width: 85%;
+  padding: 14px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#groupName:focus {
+  border-color: #1a73e8;
+  outline: none;
+  box-shadow: 0 0 10px rgba(26, 115, 232, 0.3);
+}
+
+#groupTabs {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #1a73e8, #0077ff);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#groupTabs:hover {
+  background: linear-gradient(135deg, #0055ff, #003ccc);
+  transform: translateY(-3px);
+}
+
+#groupTabs:active {
+  transform: scale(0.98);
+}
+
+/* Saved Groups Section */
+#groupList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Groups List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 350px;
+  padding: 14px 18px;
+  margin: 12px 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons in List Items */
+li button {
+  font-size: 1rem;
+  padding: 8px 14px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+li button:hover {
+  transform: translateY(-2px);
+}
+
+li button:active {
+  transform: scale(0.95);
+}
+
+/* Restore Button */
+li button:first-child {
+  background: linear-gradient(135deg, #00c853, #009624);
+}
+
+li button:first-child:hover {
+  background: linear-gradient(135deg, #009624, #006400);
+}
+
+/* Delete Button */
+li button:last-child {
+  background: linear-gradient(135deg, #ff5252, #d32f2f);
+}
+
+li button:last-child:hover {
+  background: linear-gradient(135deg, #d32f2f, #b71c1c);
+}
+
+/* Status Area */
+#status {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin: 15px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+  margin: 30px 0 10px;
+  animation: fadeIn 1s ease-in-out;
+}
